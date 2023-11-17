@@ -9,3 +9,5 @@ List of scripts within this repository.
 
 2. Email to UPN resolver: Import a CSV Containing Email Addresses associated with AD accounts on your domain and return the UPN's associated with them.
    Exports them to a CSV file.
+
+3. Suspend Bitlocker On Target Device: Define a target to suspend bitlocker on line 1. When the script runs it will suspend bitlocker on the device. 
