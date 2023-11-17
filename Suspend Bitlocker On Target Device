@@ -1,0 +1,4 @@
+$computers = @("TARGET DEVICE NAME") 
+
+foreach ($computer in $computers) { $session = New-PSSession -ComputerName $computers -ErrorAction Stop
+Invoke-Command -Session $session -ScriptBlock { Suspend-BitLocker -MountPoint "C:" -RebootCount 0 -ErrorAction Stop} }
